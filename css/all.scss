@@ -1,0 +1,31 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body,html{
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+}
+.banner{
+    background-image: url('../img/banner2.png');
+    background-size: cover;
+    height: 380px;
+}
+.card{
+    margin-bottom: 20px;
+}
+.btn-group{
+    display: none;
+}
+.selectArea{
+    width: 500px !important;
+}
+@media(max-width: 768px){
+    .selectArea{
+        width: 300px !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media(max-width: 768px){
+    .selectBtn{
+        text-align: center;
+    }
+}
