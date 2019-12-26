@@ -21,8 +21,7 @@ function updateList(e){
     let len = data.length;
     let select = e.target.value;
     document.querySelector('.btn-group').style.display = 'none';
-
-    if(e.target.nodeName === 'DIV'){return};
+    if(e.target.nodeName === 'DIV'){return}else if(e.target.nodeName === 'H2'){return};
 
     for(let i = 0 ; i < len ; i++){
         if(select === data[i].Zone){
