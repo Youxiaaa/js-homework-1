@@ -29,3 +29,13 @@ body,html{
         text-align: center;
     }
 }
+.btnGoTop{
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.show{
+    opacity: 1;
+}
