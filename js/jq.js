@@ -6,6 +6,10 @@ $(document).ready(function () {
         $('html,body').animate({scrollTop: 0},"1000");
     })
 
+    $('.btn-group label').click(function(e){
+        $('html,body').animate({scrollTop: 500},"500");
+    })
+
     //畫面滾動事件
     $(window).scroll(function(){
         //宣告scrollPos為取得window目前畫面的高度

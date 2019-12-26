@@ -49,11 +49,12 @@ function pagesList(e){
     // if(e.target.nodeName !== '')
     let index = e.target.dataset.index;
     let str = '';
+    
     if(index == 1){
         for(let i = 0 ; i < 10 ; i++){
             str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
             name = '<h2 class="font-weight-bold mb-5">'+data[i].Zone+'</h2>';
-        }
+        };
         list.innerHTML = str;    
     }else if(index == 2){
         for(let i = 10 ; i < 20 ; i++){
