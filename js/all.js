@@ -15,6 +15,7 @@ btnGroup.addEventListener('click',pagesList,false);
 //預設list
 defaultList();
 
+//更新畫面內容
 function updateList(e){
     let str = '';
     let name = '';
@@ -33,6 +34,7 @@ function updateList(e){
     title.innerHTML = name;
 }
 
+//預設初始畫面
 function defaultList(){
     let str = '';
     let len = data.length;
@@ -45,6 +47,7 @@ function defaultList(){
     list.innerHTML = str;
 }
 
+//pages按鈕事件 (更新畫面)
 function pagesList(e){
     // if(e.target.nodeName !== '')
     let index = e.target.dataset.index;
