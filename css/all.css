@@ -10767,6 +10767,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 body, html {
   font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .banner {
@@ -10777,6 +10781,15 @@ body, html {
 
 .card {
   margin-bottom: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 10px 0px 15px gray;
+          box-shadow: 10px 0px 15px gray;
 }
 
 .card h3 {
