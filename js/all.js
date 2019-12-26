@@ -26,7 +26,7 @@ function updateList(e){
 
     for(let i = 0 ; i < len ; i++){
         if(select === data[i].Zone){
-            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="../img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="../img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="../img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="../img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
+            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
             name = '<h2 class="font-weight-bold mb-5">'+data[i].Zone+'</h2>';
         }
     }
@@ -40,7 +40,7 @@ function defaultList(){
     let name = '高雄市全區';
     document.querySelector('.btn-group').style.display = 'block';
     for(let i = 0 ; i < 10 ; i++){
-        str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-4">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="../img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="../img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="../img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="../img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
+        str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-4">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
         name = '<h2 class="font-weight-bold mb-5">'+data[i].Zone+'</h2>';
     }
     list.innerHTML = str;
@@ -52,55 +52,55 @@ function pagesList(e){
     let str = '';
     if(index == 1){
         for(let i = 0 ; i < 10 ; i++){
-            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="../img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="../img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="../img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="../img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
+            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
             name = '<h2 class="font-weight-bold mb-5">'+data[i].Zone+'</h2>';
         }
         list.innerHTML = str;    
     }else if(index == 2){
         for(let i = 10 ; i < 20 ; i++){
-            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="../img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="../img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="../img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="../img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
+            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
             name = '<h2 class="font-weight-bold mb-5">'+data[i].Zone+'</h2>';
         }
         list.innerHTML = str;
     }else if(index == 3){
         for(let i = 30 ; i < 40 ; i++){
-            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="../img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="../img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="../img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="../img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
+            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
             name = '<h2 class="font-weight-bold mb-5">'+data[i].Zone+'</h2>';
         }
         list.innerHTML = str;
     }else if(index == 4){
         for(let i = 40 ; i < 50 ; i++){
-            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="../img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="../img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="../img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="../img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
+            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
             name = '<h2 class="font-weight-bold mb-5">'+data[i].Zone+'</h2>';
         }
         list.innerHTML = str;
     }else if(index == 5){
         for(let i = 50 ; i < 60 ; i++){
-            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="../img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="../img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="../img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="../img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
+            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
             name = '<h2 class="font-weight-bold mb-5">'+data[i].Zone+'</h2>';
         }
         list.innerHTML = str;
     }else if(index == 6){
         for(let i = 60 ; i < 70 ; i++){
-            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="../img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="../img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="../img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="../img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
+            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
             name = '<h2 class="font-weight-bold mb-5">'+data[i].Zone+'</h2>';
         }
         list.innerHTML = str;
     }else if(index == 7){
         for(let i = 70 ; i < 80 ; i++){
-            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="../img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="../img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="../img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="../img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
+            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
             name = '<h2 class="font-weight-bold mb-5">'+data[i].Zone+'</h2>';
         }
         list.innerHTML = str;
     }else if(index == 8){
         for(let i = 80 ; i < 90 ; i++){
-            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="../img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="../img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="../img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="../img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
+            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
             name = '<h2 class="font-weight-bold mb-5">'+data[i].Zone+'</h2>';
         }
         list.innerHTML = str;
     }else if(index == 9){
         for(let i = 90 ; i < 100 ; i++){
-            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="../img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="../img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="../img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="../img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
+            str += '<div class="col-md-6"><div class="card"><img src="'+data[i].Picture1+'" style="height: 200px;" class="card-img-top" alt="..."><div class="card-body"><div class="d-flex justify-content-between text-white" style="margin-top: -60px"><h3 class="mb-3">'+data[i].Name+'</h3><p>'+data[i].Zone+'</p></div><p><img src="img/icons_clock.png" alt="">  '+data[i].Opentime+'</p><p><img src="img/icons_pin.png" alt="">   '+data[i].Add+'</p><div class="d-flex justify-content-between"><p><img src="img/icons_phone.png" alt="">  '+data[i].Tel+'</p><p><img src="img/icons_tag.png" alt="">  '+data[i].Ticketinfo+'</p></div></div></div></div>';
             name = '<h2 class="font-weight-bold mb-5">'+data[i].Zone+'</h2>';
         }
         list.innerHTML = str;
