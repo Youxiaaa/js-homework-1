@@ -11,6 +11,10 @@ body,html{
 .card{
     margin-bottom: 20px;
 }
+.card h3{
+    background-color: rgba(0,0,0,0.4) !important;
+    padding: 0px 15px 0px 15px;
+}
 .btn-group{
     display: none;
 }
